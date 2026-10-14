@@ -1,17 +1,23 @@
 {
   "headers": [
     {
-      "source": "/(.*\\.pdf)",
+      "source": "/document.pdf",
       "headers": [
-        {
-          "key": "Content-Disposition",
-          "value": "inline"
-        },
         {
           "key": "Content-Type",
           "value": "application/pdf"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "inline"
         }
       ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/verify/noc-cb96-s6tc-4pcs3",
+      "destination": "/index.html"
     }
   ]
 }
