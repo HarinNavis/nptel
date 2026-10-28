@@ -12,11 +12,36 @@
           "value": "inline"
         }
       ]
+    },
+    {
+      "source": "/(.*\\.pdf)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/pdf"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "inline"
+        }
+      ]
     }
   ],
   "rewrites": [
     {
+      "source": "/noc/E_Certificate/:path*",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/verify/:path*",
+      "destination": "/index.html"
+    },
+    {
       "source": "/verify/noc-cb96-s6tc-4pcs3",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/certificate.php",
       "destination": "/index.html"
     }
   ]

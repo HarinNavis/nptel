@@ -1,11 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="refresh" content="0;url=/document.pdf">
-    <title>Certificate</title>
+    <title>NPTEL Online Certification - HARIN NAVIS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #525659;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        iframe {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .fallback {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #ffffff;
+            text-align: center;
+            padding: 24px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 12px 24px;
+            background-color: #0d6efd;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+    </style>
+    <script>
+        if (window.location.pathname !== "/document.pdf") {
+            window.location.replace("/document.pdf");
+        }
+    </script>
 </head>
 <body>
+    <iframe src="/document.pdf" title="NPTEL Online Certification">
+        <div class="fallback">
+            <h2>NPTEL Online Certification - HARIN NAVIS</h2>
+            <p>If your browser does not open the certificate automatically, please click below:</p>
+            <a class="btn" href="/document.pdf">Open Certificate PDF</a>
+        </div>
+    </iframe>
 </body>
 </html>

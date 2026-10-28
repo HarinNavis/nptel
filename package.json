@@ -1,0 +1,16 @@
+{
+  "name": "nptel-certificate-host",
+  "version": "1.0.0",
+  "description": "NPTEL Certificate Hosting",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "nptel",
+    "certificate"
+  ],
+  "author": "Harin Navis",
+  "license": "ISC"
+}
